@@ -1,0 +1,34 @@
+{
+  "name": "m24-api-tests",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "mocha tests/**/*.spec.js --timeout 10000 --reporter mochawesome"
+  },
+  "dependencies": {
+    "dotenv": "^16.6.1",
+    "joi": "^17.13.3",
+    "mocha": "^11.3.0",
+    "mochawesome": "^7.1.4",
+    "pactum": "^3.9.1"
+  },
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "devDependencies": {
+    "jest": "^30.4.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoaoPedromart573/modulo24-api-tests.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/JoaoPedromart573/modulo24-api-tests/issues"
+  },
+  "homepage": "https://github.com/JoaoPedromart573/modulo24-api-tests#readme"
+}
