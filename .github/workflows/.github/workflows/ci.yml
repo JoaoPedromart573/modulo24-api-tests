@@ -1,0 +1,36 @@
+name: CI API Tests
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  testes:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout código
+        uses: actions/checkout@v4
+
+      - name: Configurar Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Instalar dependências
+        run: npm install
+
+      - name: Rodar testes
+        run: npm test
+
+      - name: Gerar página
+        run: |
+          mkdir public
+          echo "<h1>Testes executados com sucesso</h1>" > public/index.html
+
+      - name: Publicar Github Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
