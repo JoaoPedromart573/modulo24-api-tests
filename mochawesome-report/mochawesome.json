@@ -5,9 +5,9 @@
     "passes": 5,
     "pending": 0,
     "failures": 0,
-    "start": "2026-05-18T17:08:40.150Z",
-    "end": "2026-05-18T17:08:42.547Z",
-    "duration": 2397,
+    "start": "2026-05-19T19:32:15.944Z",
+    "end": "2026-05-19T19:32:17.864Z",
+    "duration": 1920,
     "testsRegistered": 5,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "87115adc-550a-4ff7-85de-adc6bb4ca06e",
+      "uuid": "72f95018-3543-4976-809b-e0e0f9a1e03e",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "fd43499a-ff55-417f-9704-42a8511c8c06",
+          "uuid": "4eb9938f-9bd7-41ac-a7ac-1980d7c9b55b",
           "title": "Categorias API",
           "fullFile": "C:\\Users\\djoao\\Desktop\\repositorio\\modulo24-api-tests\\tests\\categories.spec.js",
           "file": "\\tests\\categories.spec.js",
@@ -38,7 +38,7 @@
               "title": "Listar categorias",
               "fullTitle": "Categorias API Listar categorias",
               "timedOut": false,
-              "duration": 604,
+              "duration": 970,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,26 +47,26 @@
               "context": null,
               "code": "await pactum.spec()\n      .get('https://fakestoreapi.com/products/categories')\n      .expectStatus(200);",
               "err": {},
-              "uuid": "155fa9f9-6caa-488d-8544-28c310621102",
-              "parentUUID": "fd43499a-ff55-417f-9704-42a8511c8c06",
+              "uuid": "2e8b45e4-ffde-419e-9f7f-f91cb1048709",
+              "parentUUID": "4eb9938f-9bd7-41ac-a7ac-1980d7c9b55b",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "155fa9f9-6caa-488d-8544-28c310621102"
+            "2e8b45e4-ffde-419e-9f7f-f91cb1048709"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 604,
+          "duration": 970,
           "root": false,
           "rootEmpty": false,
           "_timeout": 10000
         },
         {
-          "uuid": "71e405bf-ee4f-4502-ba1a-706bfe3d26bb",
+          "uuid": "441d70a7-8a80-4d54-8d89-0d72395bdfe5",
           "title": "Contrato Produto",
           "fullFile": "C:\\Users\\djoao\\Desktop\\repositorio\\modulo24-api-tests\\tests\\contracts.spec.js",
           "file": "\\tests\\contracts.spec.js",
@@ -77,7 +77,7 @@
               "title": "Validar contrato do produto",
               "fullTitle": "Contrato Produto Validar contrato do produto",
               "timedOut": false,
-              "duration": 558,
+              "duration": 239,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -86,26 +86,26 @@
               "context": null,
               "code": "await pactum.spec()\n      .get('https://fakestoreapi.com/products/1')\n      .expectStatus(200)\n      .expectJsonMatch({\n        id: like(1),\n        title: like('Produto'),\n        price: like(100),\n        description: like('Descricao'),\n        category: like('Categoria'),\n        image: like('Imagem')\n      });",
               "err": {},
-              "uuid": "8076d43c-15a3-4b9f-bb4a-8560d266eb5a",
-              "parentUUID": "71e405bf-ee4f-4502-ba1a-706bfe3d26bb",
+              "uuid": "e57f030e-5109-44db-a81b-0dc62049d8aa",
+              "parentUUID": "441d70a7-8a80-4d54-8d89-0d72395bdfe5",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "8076d43c-15a3-4b9f-bb4a-8560d266eb5a"
+            "e57f030e-5109-44db-a81b-0dc62049d8aa"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 558,
+          "duration": 239,
           "root": false,
           "rootEmpty": false,
           "_timeout": 10000
         },
         {
-          "uuid": "86bba011-b46a-494e-8702-608c7353e192",
+          "uuid": "d6b92d5e-2e76-4514-bb40-02f3c84121a9",
           "title": "Produtos API",
           "fullFile": "C:\\Users\\djoao\\Desktop\\repositorio\\modulo24-api-tests\\tests\\products.spec.js",
           "file": "\\tests\\products.spec.js",
@@ -116,7 +116,7 @@
               "title": "Adicionar produto",
               "fullTitle": "Produtos API Adicionar produto",
               "timedOut": false,
-              "duration": 339,
+              "duration": 237,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -125,8 +125,8 @@
               "context": null,
               "code": "await pactum.spec()\n      .post(`${process.env.BASE_URL}/products`)\n      .withJson({\n        title: 'Notebook Gamer',\n        price: 5000\n      })\n      .expectStatus(201);",
               "err": {},
-              "uuid": "58a71ae7-e7d5-4d21-8bb9-fe2ea6833345",
-              "parentUUID": "86bba011-b46a-494e-8702-608c7353e192",
+              "uuid": "4aefad89-178d-461c-b316-14de8dfb9642",
+              "parentUUID": "d6b92d5e-2e76-4514-bb40-02f3c84121a9",
               "isHook": false,
               "skipped": false
             },
@@ -134,7 +134,7 @@
               "title": "Editar produto",
               "fullTitle": "Produtos API Editar produto",
               "timedOut": false,
-              "duration": 464,
+              "duration": 235,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -143,8 +143,8 @@
               "context": null,
               "code": "await pactum.spec()\n      .put(`${process.env.BASE_URL}/products/1`)\n      .withJson({\n        title: 'Notebook Editado',\n        price: 4500\n      })\n      .expectStatus(200);",
               "err": {},
-              "uuid": "0dbc8218-246d-4239-907d-9e63b91d0bf9",
-              "parentUUID": "86bba011-b46a-494e-8702-608c7353e192",
+              "uuid": "d46d8a53-138d-427c-9a01-e764aaf441c8",
+              "parentUUID": "d6b92d5e-2e76-4514-bb40-02f3c84121a9",
               "isHook": false,
               "skipped": false
             },
@@ -152,7 +152,7 @@
               "title": "Deletar produto",
               "fullTitle": "Produtos API Deletar produto",
               "timedOut": false,
-              "duration": 404,
+              "duration": 234,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -161,22 +161,22 @@
               "context": null,
               "code": "await pactum.spec()\n      .delete(`${process.env.BASE_URL}/products/1`)\n      .expectStatus(200);",
               "err": {},
-              "uuid": "a5f2c5f8-012a-4da0-ab7b-e2ea21aac146",
-              "parentUUID": "86bba011-b46a-494e-8702-608c7353e192",
+              "uuid": "52e23ed8-a67d-4485-8f64-efb7b002941f",
+              "parentUUID": "d6b92d5e-2e76-4514-bb40-02f3c84121a9",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "58a71ae7-e7d5-4d21-8bb9-fe2ea6833345",
-            "0dbc8218-246d-4239-907d-9e63b91d0bf9",
-            "a5f2c5f8-012a-4da0-ab7b-e2ea21aac146"
+            "4aefad89-178d-461c-b316-14de8dfb9642",
+            "d46d8a53-138d-427c-9a01-e764aaf441c8",
+            "52e23ed8-a67d-4485-8f64-efb7b002941f"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 1207,
+          "duration": 706,
           "root": false,
           "rootEmpty": false,
           "_timeout": 10000
@@ -194,7 +194,7 @@
   ],
   "meta": {
     "mocha": {
-      "version": "11.3.0"
+      "version": "11.7.5"
     },
     "mochawesome": {
       "options": {
